@@ -52,5 +52,18 @@ Output:
 
 
 
+# for a full stack approach 
 
+export KEY_VAULT_URL="https://your-key-vault-name.vault.azure.net/"
+create secrets with names like:
 
+apiUrl
+storageAccountName
+storageAccountKey
+storageContainerName
+deltaTablePath
+
+locally: az login
+on the VM use the managed identity
+
+see src/full_stack_ingest.py file for a template with rest => az data lake gen 2
