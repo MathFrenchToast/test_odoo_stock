@@ -4,9 +4,13 @@
 ## setup
 
 Ce code de test utilise Odoo en local via docker compose
-lors de la première connexion, un user admin est créé et ses identifiant et mot de passe sont renseigné dans un fichier `env`
-
 pour lancer odoo: `docker compose up -d`
+
+lors de la première connexion, un user admin est créé et ses identifiant et mot de passe sont renseigné dans un fichier `.env` (utilisez env.example comme base)
+
+activez l'app purchase.
+
+
 
 ## connexion à l'api Odoo
 L'api Odoo utilise un user et son mot de passe (ou une apikey lié à cet utilisateur à la place du mot de passe).
